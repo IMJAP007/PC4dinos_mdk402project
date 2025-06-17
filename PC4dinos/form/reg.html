@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="/styles/background.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
+
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html" class="logo">
+            <img src="/source/biglogo.png" alt="biglogo">
+        </a>
+    </nav>
+
+    <center>
+        <div class="head">
+            <h2>Добро пожаловать в <a style="color: rgb(255, 145, 0);" href="/index.html">PC4Dinos!</a> </h2>
+            <h4>Пожалуйста, заполните форму регистрации для создания аккаунта</h4>
+        </div>
+    </center>
+
+
+        <form class="my-form" id="main-form" onsubmit="return submitForm(this);" method="get">
+        <label class="label" for="first-name">Имя</label><br>
+        <input class="text" type="text" name="first-name" required minlength="2" id="name" pattern="^[А-Яа-яЁё]+$" placeholder="Имя"><br>
+
+        <label class="label" for="surname">Фамилия</label><br>
+        <input class="text" type="text" name="surname" required minlength="2" pattern="^[А-Яа-яЁё\s]+$" placeholder="Фамилия" id="surname"><br>
+
+        <label class="label" for="role">Роль</label><br>
+        <input class="rad" type="radio" name="role" id="id-student" value="student" required>
+        <label style="font-size: 1.3em; color: white; margin-left: 10px;" for="student">Ученик</label><br>
+        <input class="rad" type="radio" name="role" id="id-teacher" value="teacher" required>
+        <label style="font-size: 1.3em; color: white; margin-left: 10px;" for="teacher">Учитель</label><br><br>
+
+        <label class="label" for="email">Email</label><br>
+        <input class="text" type="email" name="email" required placeholder="idk@mail.com" id="email"><br>
+
+        <label class="label" for="password">Пароль</label><br>
+        <input class="text" type="password" name="password" required id="pass"><br>
+
+        <label class="label" for="confirm-password">Подтвердить пароль</label><br>
+        <input class="text" type="password" name="confirm-password" required id="confirmPass"><br>
+
+        <input class="check" type="checkbox" for="agreement" name="agreement" required><a href="sogl.html" target="_blank" class="agr" for="agreement">Я соглашаюсь на обработку персональных данных и принимаю условия пользовательского соглашения</a><br><br>
+
+        <button type="submit"><span style="color: black;">Регистрация</span></button>
+    </form>
+
+    <footer>
+        <p>&copy Защищено авторским правом организации ООО "Ведро"</p>
+        <p>Адрес: Республика Кирговинск, Большая Небольшая 23, 34</p>
+        <p>Телефон: 8 (812) 246-21-79</p>
+        <p>Почта: barakosventsim@ger.com</p>
+    </footer>
+    
+    <script>
+
+    function submitForm(el){
+        pass = el.pass.value;
+        repass = el.confirmPass.value;
+
+        name = el.name.value;
+        surname = el.surname.value;
+        email = el.email.value;
+
+        checkEmail = email.split(".");
+
+        if (name.length > 15) {
+            alert("Слишком длинное имя!");
+            return false;
+        }
+
+        else if (surname.length > 20) {
+            alert("Слишком длинная фамилия!");
+            return false;
+        }
+
+        else if (email.length < 5) {
+            alert("Слишком короткая почта!");
+            return false;
+        }
+
+        else if (email.length > 50) {
+            alert("Слишком длинное имя почты!");
+            return false;
+        }
+
+        else if (checkEmail[checkEmail.length-1] != "ru" && checkEmail[checkEmail.length-1] != "com") {
+            console.log(checkEmail);
+            alert("Вы не указати код страны в почте или ввели неправильно!")
+            return false;
+        }
+
+        else if (pass.length > 30) {
+            alert("Ваш пароль слишком большой, вы его наверняка забудете или не сможете нормально ввести!");
+            return false;
+        }
+
+        else if (pass.length < 3) {
+            alert("Ваш пароль слишком ненадежный!");
+            return false;
+        }
+
+        else if (pass != repass) {
+            alert("Пароли должны совподать!");
+            return false;
+        }
+        
+        else {
+            alert("Все заполнено корректно!");
+            window.location.href = '/index.html';
+            return false;
+        }
+    }
+    </script>
+    
+</body>
+</html>

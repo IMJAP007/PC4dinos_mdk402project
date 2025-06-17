@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Education page */
+
+.main-edu{
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.fast-type {
+    width: 40vw;
+    height: auto;
+    max-height: 600px;
+    min-height: 200px;
+    margin-top: 7vmax;
+    margin-bottom: 7vmax;
+    border: 3px solid black;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.fast-type h1 {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 10px;
+    color: orange;
+}
+
+.fast-type p {
+    margin: 30px 10px 10px 10px;
+    font-size: 22px;
+}
+
+.fast-type u {
+    font-size: 22px;
+}
+
+.fast-type ol li {
+    font-size: 22px;
+}
+
+
+.hot-keys {
+    width: 40vw;
+    height: auto;
+    max-height: 600px;
+    margin-top: 7vmax;
+    margin-bottom: 7vmax;
+    border: 3px solid black;
+    background-color: rgb(71, 71, 71);
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hot-keys h1 {
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 10px;
+    color: orange;
+}
+
+.hot-keys p {
+    margin: 30px 10px 10px 10px;
+    font-size: 22px;
+}
+
+.hot-keys u {
+    font-size: 22px;
+}
+
+.hot-keys ol li {
+    font-size: 22px;
+}
+
+.main-edu button {
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.main-edu .find-out1 {
+    margin-top: auto;
+}
+
+.main-edu .find-out1 button {
+    /* margin-left: 10px; */
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.main-edu .find-out2 {
+    margin-top: auto;
+}
+
+.main-edu .find-out2 button {
+    /* margin-left: 10px; */
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.main-edu .find-out1 button:hover, .main-edu .find-out2 button:hover {
+    background-color: black;
+    color: white;
+    border: 2px dashed white;
+}
+
+/* Tests page */
+
+.main-tests{
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.main-tests button {
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+/* .main-tests .find-out1 {
+    margin-top: auto;
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 32px;
+    
+}
+
+.main-tests .find-out2 {
+    margin-top: auto;
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 32px;
+} */
+
+.main-tests .find-out1 {
+    margin-top: auto;
+}
+
+.main-tests .find-out1 button {
+    /* margin-left: 10px; */
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 32px;
+}
+
+.main-tests .find-out2 {
+    margin-top: auto;
+}
+.main-tests .find-out2 button {
+    /* margin-left: 10px; */
+    width: auto;
+    height: 8vh;
+    max-height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: orange;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 32px;
+}
+
+.main-tests .find-out1 button:hover, .main-tests .find-out2 button:hover {
+    background-color: black;
+    color: white;
+    border: 2px dashed white;
+}
+
+footer {
+    background-color: rgb(71, 71, 71);
+    padding: 10px 10px 10px 30px;
+    color: white;
+    margin-top: auto;
+}
+
+/* End of test page */

@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    min-width: 1330px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.menu {
+    width: 250px;
+    height: 500px;
+    background-color: gray;
+    float: left;
+}
+
+.selection {
+    width: 1050px;
+    height: 500px;
+    background-color: gray;
+    float: right;
+}
+
+.button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+.test {
+    width: 1000px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.desc {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    color: black;
+}
+
+footer {
+    background-color: rgb(71, 71, 71);
+    padding: 10px 10px 10px 30px;
+    color: white;
+    margin-top: auto;
+}
